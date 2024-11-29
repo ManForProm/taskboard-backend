@@ -21,7 +21,7 @@ services:
     command: npm run start:dev
 
   db:
-    image: postgres:13
+    image: postgis/postgis:13-3.3
     container_name: taskboard-db
     environment:
       - POSTGRES_DB=taskboard

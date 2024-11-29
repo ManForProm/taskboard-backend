@@ -28,7 +28,7 @@ export class AuthController {
     const token = await this.authService.generateToken({
       username: user.username,
       sub: user.id,
-      roles: user.roles,
+      roles: user.role,
     });
     return { accessToken: token };
   }
